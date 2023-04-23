@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_menu_container_height">70dp</dimen>
+    <dimen name="top_menu_container_marginTop">1dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_marginTop">10dp</dimen>
+    <dimen name="main_container_width">300dp</dimen>
+    <dimen name="main_container_height">500dp</dimen>
+    <dimen name="bottom_menu_container_height">70dp</dimen>
+    <dimen name="main_container_marginBottom">48dp</dimen>
+
+</resources>
