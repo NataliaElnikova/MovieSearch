@@ -2,7 +2,8 @@
 <resources>
     <color name="bottom_menu_container_color">#FFBB86FC</color>
     <color name="top_menu_container_color">#FF03DAC5</color>
-    <color name="main_container_color">#FF3700B3</color>
-    <color name="text_color">#ffffff</color>
+    <color name="app_bar_color">#FF3700B3</color>
+    <color name="text_color_w">#ffffff</color>
     <color name="main_background_color">#ffffff</color>
+    <color name="text_color_b">#000000</color>
 </resources>
