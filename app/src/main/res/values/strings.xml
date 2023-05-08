@@ -7,5 +7,12 @@
     <string name="btn_menu">Меню</string>
     <string name="app_name" translatable="false">MovieSearch</string>
     <string name="disclaimer"> Картинки взяты с pexels.com</string>
+    <string name="more">More</string>
+    <string name="search">Поиск</string>
+    <string name="fav">Избранное</string>
+    <string name="menu_favorites_title">Favorites</string>
+    <string name="menu_watch_later_title">Watch later</string>
+    <string name="menu_selections_title">Selections</string>
+    <string name="menu_settings_title">Settings</string>
 
 </resources>

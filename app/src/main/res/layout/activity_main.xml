@@ -116,8 +116,8 @@
             android:layout_height="wrap_content"
             android:background="?selectableItemBackgroundBorderless"
             android:text="@string/btn_menu"
-            android:textColor="@color/text_color_w"
-            android:onClick="onClickToast"/>
+            android:textColor="@color/text_color_w"/>
+<!--            android:onClick="onClickToast"-->
 
         <Button
             android:id="@+id/btn_favorites"
@@ -125,8 +125,8 @@
             android:layout_height="wrap_content"
             android:background="?selectableItemBackgroundBorderless"
             android:text="@string/btn_favorites"
-            android:textColor="@color/text_color_w"
-            android:onClick="onClickToast"/>
+            android:textColor="@color/text_color_w"/>
+<!--            android:onClick="onClickToast"/>-->
 
         <Button
             android:id="@+id/btn_watch_later"
@@ -134,8 +134,8 @@
             android:layout_height="wrap_content"
             android:background="?selectableItemBackgroundBorderless"
             android:text="@string/btn_watch_later"
-            android:textColor="@color/text_color_w"
-            android:onClick="onClickToast"/>
+            android:textColor="@color/text_color_w"/>
+<!--            android:onClick="onClickToast"/>-->
 
         <Button
             android:id="@+id/btn_selections"
@@ -143,8 +143,8 @@
             android:layout_height="wrap_content"
             android:background="?selectableItemBackgroundBorderless"
             android:text="@string/btn_selections"
-            android:textColor="@color/text_color_w"
-            android:onClick="onClickToast"/>
+            android:textColor="@color/text_color_w"/>
+<!--            android:onClick="onClickToast"/>-->
 
         <Button
             android:id="@+id/btn_settings"
@@ -152,8 +152,8 @@
             android:layout_height="wrap_content"
             android:background="?selectableItemBackgroundBorderless"
             android:text="@string/btn_settings"
-            android:textColor="@color/text_color_w"
-            android:onClick="onClickToast"/>
+            android:textColor="@color/text_color_w"/>
+<!--            android:onClick="onClickToast"/>-->
     </LinearLayout>
 
 
