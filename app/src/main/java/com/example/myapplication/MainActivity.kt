@@ -17,40 +17,47 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setContentView(R.layout.activity_main)
+        initNavigation()
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.getDefaultNightMode())
 
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragment_placeholder, HomeFragment())
+            .addToBackStack(null)
+            .commit()
+    }
 
-        fun initNavigation() {
-            binding.topAppBar.setOnMenuItemClickListener {
-                when (it.itemId) {
-                    R.id.settings -> {
-                        Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-                    else -> false
+    private fun initNavigation() {
+        binding.topAppBar.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.settings -> {
+                    Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
+                    true
                 }
+                else -> false
             }
-            binding.bottomNavigation.setOnItemSelectedListener {
+        }
+        binding.bottomNavigation.setOnItemSelectedListener {
 
-                when (it.itemId) {
-                    R.id.favorites -> {
-                        Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-                    R.id.watch_later -> {
-                        Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-                    R.id.selections -> {
-                        Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-                    else -> false
+            when (it.itemId) {
+                R.id.favorites -> {
+                    Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+                    true
                 }
+                R.id.watch_later -> {
+                    Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.selections -> {
+                    Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
             }
         }
     }
+
     fun launchDetailsFragment(film: Film) {
         //Создаем "посылку"
         val bundle = Bundle()

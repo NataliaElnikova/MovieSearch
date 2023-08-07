@@ -27,6 +27,7 @@
                 android:id="@+id/details_poster"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
                 android:background="@color/design_default_color_secondary_variant"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
@@ -64,7 +65,7 @@
             android:id="@+id/details_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="15dp"
             tools:text="@tools:sample/lorem/random" />
 
     </androidx.core.widget.NestedScrollView>

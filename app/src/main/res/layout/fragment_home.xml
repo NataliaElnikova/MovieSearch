@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +8,15 @@
     tools:context=".HomeFragment"
     android:background="@drawable/corner_background">
 
-
-
     <androidx.cardview.widget.CardView
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_margin="10dp"
         android:elevation="5dp"
         app:cardCornerRadius="15dp"
+        android:layout_marginTop="@dimen/bottom_menu_container_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -64,24 +65,23 @@
         android:id="@+id/disclaimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="110dp"
         android:autoLink="web"
         android:linksClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
         android:text="@string/disclaimer" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_recycler"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/bottom_menu_container_height"
-        android:background="@drawable/corner_background"
-        android:orientation="vertical"
         android:padding="8dp"
+        android:background="@drawable/corner_background"
+        tools:listitem="@layout/film_item"
+        app:layout_constraintTop_toBottomOf="@+id/disclaimer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/disclaimer"
-        tools:listitem="@layout/film_item" />
-
-</FrameLayout>
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
