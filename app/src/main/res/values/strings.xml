@@ -10,5 +10,8 @@
     <string name="menu_selections_title">Selections</string>
     <string name="menu_settings_title">Settings</string>
     <string name="title_name">Search!</string>
+    <string name="page_title" translatable="false">MovieSearch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
